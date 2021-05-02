@@ -1,0 +1,114 @@
+    /* Font sizes. */
+    :root {
+        --font-size-sm: 12px;
+    }
+
+    /* colors */
+    :root {
+        --white: #ffffff;
+        --gray-dark: #6d6e71;
+        --green: #8ecd58;
+        --gray-light: #f5f5f5;
+        --face-book-color: #2778ae;
+        --instagram-color: #c13584;
+        --twiter-color: #15b4c9;
+        --border: #d9d9d9;
+    }
+
+    .container-fluid {
+        background-color: var(--gray-light);
+        border-bottom: 1px solid var(--border);
+        padding: 10px 5.4rem;
+
+    }
+
+    .top-bar p {
+        font-size: var(--font-size-sm);
+
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .social a {
+        background-color: var(--white);
+        border-radius: 16px;
+        border: 1px solid var(--gray-light);
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        margin: 0 5px;
+
+
+    }
+
+    .social a i {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .facebook {
+        color: var(--face-book-color);
+    }
+
+    .instagram {
+        color: var(--instagram-color);
+    }
+
+    .twiter {
+        color: var(--twiter-color);
+    }
+
+    .sign-btn {
+        color: var(--white);
+        background-color: var(--gray-dark);
+        border: 1px solid var(--white);
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        padding: 6px 0;
+        text-align: center;
+        width: 70px;
+    }
+
+    .login-btn {
+        background-color: var(--green);
+        color: var(--white);
+        border: 1px solid var(--white);
+        border-left: none;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 6px 0;
+        text-align: center;
+        width: 70px;
+    }
+
+
+    @media screen and (min-width: 1366px) {
+        .container {
+            max-width: 1210px !important;
+        }
+
+    }
+    .menu{
+        height: 38px;
+        background-color: var(--gray-light)
+    }
+
+    .search {
+        border-radius: 20px;
+        border-color: var(--border);
+        width: 100%;
+
+
+    }
+
+
+    .logo img {
+        height: 45px;
+    }
+    .header{
+        padding: 2rem 0
+    }
