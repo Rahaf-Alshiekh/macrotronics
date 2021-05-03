@@ -1,6 +1,8 @@
     /* Font sizes. */
     :root {
         --font-size-sm: 12px;
+        --font-size-md:14;
+        --font-sixe-18:18px
     }
 
     /* colors */
@@ -14,6 +16,8 @@
         --twiter-color: #15b4c9;
         --border: #d9d9d9;
         --red:#BE2026;
+        --tile-gray:#666;
+        --product-desc-gray:#313131;
     }
 
     .container-fluid {
@@ -151,3 +155,104 @@
         border: 1px solid var(--border);
         margin-bottom: 2rem;
     }
+    .main-tilte{
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        border-bottom: 1px dashed var(--border);
+
+    }
+    
+    .main-tilte h1 {
+    font-size: var(--font-size-md);
+    color:var(--tile-gray) ;
+    margin: 0;
+    }
+    .main-tilte i {
+        padding: 0 10px;
+    }
+    .main-tilte a{
+        color: var(--red);
+        text-decoration: none;
+    }
+    .single-products {
+        border: 1px dashed var(--border);
+        margin: 0 5px;
+    }
+    .single-products a{
+        font-size: var(--font-size-sm);
+        color: var(--product-desc-gray);
+        text-decoration: none;
+        min-height: 40px;
+    }
+    .img-product img{
+        width: 200px;
+        height: 200px;
+        vertical-align: middle;
+
+    }
+    .price-product{
+
+        color: var(--red);
+        display: flow-root;
+        margin: 0 20px;
+
+    }
+    .sale-price{
+        float: left;
+    }
+    .normal-price{
+        float: right;
+        margin-top: 5px;
+        text-decoration: line-through;
+    }
+    .price-product p:first-child{
+        font-size: var(--font-sixe-18);
+
+    }
+    .btn-product{
+        cursor: pointer;
+        border: none;
+        line-height: 24px;
+        text-align: center;
+        width: 95px;
+        margin-right: 4px;
+        color: var(--white);
+    }
+    .addCart-btn{
+        background-color: var(--tile-gray);
+    }
+    .addCart-btn:hover{
+        background-color: var(--red);
+
+
+    }
+    .detailes-btn{
+        background-color: var(--red);
+    }
+    .detailes-btn :hover{
+        background-color: var(--tile-gray);
+    }
+    .btn-container{
+        margin-bottom: 13px;
+    }
+    .footer ul{
+        display: flex;
+        list-style: none;
+    }
+    .footer ul li{
+        padding: 0 15px;
+        vertical-align: middle;
+    }
+    .footer ul li:first-of-type{
+        padding: 0 0px;
+    }
+    .footer-border{
+        border: 1px dashed var(--border);
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+           
+         

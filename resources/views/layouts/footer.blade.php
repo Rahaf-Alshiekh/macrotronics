@@ -1,6 +1,30 @@
+
+<div class="container">
 <footer>
+    <div class="row footer">
+        <div class="col-md-12">
+            <div class="footer-border">
+            <ul>
+                <li> Build Your PC</li>
+                <li> Specials</li>
+                <li> Brands</li>
+                <li> Services</li>
+                <li> Advanced Search</li>
+                <li>Contact Us</li>
+                <li>Sign Up</li>
+                <li>Sign In</li>
+                 
+            </ul>
+            </div>
+
+        </div>
+
+    </div>
 
 </footer>
+
+</div>  {{-- end container --}}
+
 
  {{-- scripts --}}
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
