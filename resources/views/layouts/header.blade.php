@@ -38,8 +38,74 @@
         </div>
 
         <div class="row ">
-            <div class="col-md-12 menu">
+            <div class="col-md-12 ">
+                <div class="menu">
+                    <span class="dropdown-toggle"  id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Computers
+                    </span>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                    <span class=" dropdown-toggle" id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false">
+                      computersparts
+                    </span>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
 
+                    <span class=" dropdown-toggle"  id="dropdownMenu4" data-bs-toggle="dropdown" aria-expanded="false">
+                        PC Essentials
+                    </span>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                    
+                    <span class=" dropdown-toggle"  id="dropdownMenu4" data-bs-toggle="dropdown" aria-expanded="false">
+                        PC Accessories
+                      </span>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                      </ul>
+                      
+                    <span class=" dropdown-toggle"  id="dropdownMenu4" data-bs-toggle="dropdown" aria-expanded="false">
+                        PC Peripherals
+                      </span>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                      </ul>
+                      
+                    <span class=" dropdown-toggle"  id="dropdownMenu4" data-bs-toggle="dropdown" aria-expanded="false">
+                        Networking
+                      </span>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                      </ul>
+                      
+                    <span class=" dropdown-toggle"  id="dropdownMenu4" data-bs-toggle="dropdown" aria-expanded="false">
+                        Electronics
+                      </span>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                      </ul>
+                      <button class="builder btn btn-secondary " type="button" >
+                        <i class="fa fa-wrench"></i>
+                        Bc Builder
+                      </button>
+                    </div>
             </div>
 
         </div>

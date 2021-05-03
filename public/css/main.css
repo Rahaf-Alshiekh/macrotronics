@@ -13,6 +13,7 @@
         --instagram-color: #c13584;
         --twiter-color: #15b4c9;
         --border: #d9d9d9;
+        --red:#BE2026;
     }
 
     .container-fluid {
@@ -24,6 +25,8 @@
 
     .top-bar p {
         font-size: var(--font-size-sm);
+        margin-top: auto;
+        margin-bottom: auto;
 
     }
 
@@ -94,21 +97,57 @@
     }
     .menu{
         height: 38px;
-        background-color: var(--gray-light)
+        background-color: var(--gray-light);
+        border-top: 2px solid var(--red);
+        margin-bottom: 1.4rem;
     }
 
     .search {
         border-radius: 20px;
         border-color: var(--border);
         width: 100%;
-
-
     }
 
 
     .logo img {
         height: 45px;
     }
+
     .header{
-        padding: 2rem 0
+        padding: 1.4rem 0;
+    }
+
+    .menu span{
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: var(--font-size-sm);
+    }
+    .menu span:hover{
+        cursor: pointer;
+    }
+    .builder{
+        float: right;
+    }
+    .builder{
+        background-color: var(--red);
+        padding: 4px 30px;
+        border-radius: 0;
+        border-color: var(--red);
+    }
+    .slider{
+        background-image: url('/images/eblue-chairs.jpg');
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid var(--border);
+    }
+    .right-banner img{
+        width: 176px;
+        height: auto;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        border: 1px solid var(--border);
+        margin-bottom: 2rem;
     }
