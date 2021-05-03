@@ -94,7 +94,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="/images/logo.png" alt="Macrotronics" width="500" height="90">
+                    <img src="/images/logo1.png" alt="Macrotronics" width="500" height="90">
 
                 </div>
                 <div class="col-md-4">
