@@ -5,6 +5,11 @@
         --font-sixe-18:18px
     }
 
+    @font-face {
+        font-family: Arial;
+        src: url(/font/arial.ttf);
+      }
+
     /* colors */
     :root {
         --white: #ffffff;
@@ -18,6 +23,11 @@
         --red:#BE2026;
         --tile-gray:#666;
         --product-desc-gray:#313131;
+        --footer-p-color:#8d8d8d;
+        --footer-li:#4a4a4a;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .container-fluid {
@@ -78,6 +88,10 @@
         padding: 6px 0;
         text-align: center;
         width: 70px;
+        font-size: var(--font-size-md);
+        font-size: 12px;
+        margin-left: 7px;
+
     }
 
     .login-btn {
@@ -90,6 +104,9 @@
         padding: 6px 0;
         text-align: center;
         width: 70px;
+        font-size: 12px;
+        margin-right: 7px;
+
     }
 
 
@@ -139,13 +156,16 @@
         border-radius: 0;
         border-color: var(--red);
     }
-    .slider{
+    .swiper-slide{
         background-image: url('/images/eblue-chairs.jpg');
         height: 300px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         border: 1px solid var(--border);
+    }
+    .swiper-container{
+        width: 100%!important;
     }
     .right-banner img{
         width: 176px;
@@ -179,7 +199,7 @@
     }
     .single-products {
         border: 1px dashed var(--border);
-        margin: 0 5px;
+        padding: 7px;
     }
     .single-products a{
         font-size: var(--font-size-sm);
@@ -220,6 +240,7 @@
         width: 95px;
         margin-right: 4px;
         color: var(--white);
+        font-size: 12px;
     }
     .addCart-btn{
         background-color: var(--tile-gray);
@@ -227,12 +248,12 @@
     .addCart-btn:hover{
         background-color: var(--red);
 
-
     }
+    
     .detailes-btn{
         background-color: var(--red);
     }
-    .detailes-btn :hover{
+    .detailes-btn:hover{
         background-color: var(--tile-gray);
     }
     .btn-container{
@@ -241,6 +262,11 @@
     .footer ul{
         display: flex;
         list-style: none;
+        padding-left: 0;
+    }
+    .footer-border li a{
+        text-decoration: none;
+        color: var(--footer-li);
     }
     .footer ul li{
         padding: 0 15px;
@@ -253,6 +279,19 @@
         border: 1px dashed var(--border);
         margin-bottom: 20px;
         margin-top: 30px;
+        background-color: var(--gray-light);
+        padding: 20px;
     }
-           
+    .btn-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .copy-right{
+        margin: 0;
+        color: var(--footer-p-color);
+    }
+    .swiper-container {
+        width: 600px;
+        height: 300px;
+      }    
          
