@@ -25,6 +25,8 @@
         --product-desc-gray:#313131;
         --footer-p-color:#8d8d8d;
         --footer-li:#4a4a4a;
+        --p-color:#888888;
+        --red--bold:#920000;
     }
     body{
         font-family: Arial, Helvetica, sans-serif;
@@ -87,15 +89,12 @@
         border-top-left-radius: 8px;
         padding: 6px 0;
         text-align: center;
-<<<<<<< HEAD
         width: 100px;
-=======
         width: 70px;
         font-size: var(--font-size-md);
         font-size: 12px;
         margin-left: 7px;
 
->>>>>>> 43e5aedd0252bbe52edda86b9b90bc9a6a7e219a
     }
 
     .login-btn {
@@ -107,15 +106,12 @@
         border-top-right-radius: 8px;
         padding: 6px 0;
         text-align: center;
-<<<<<<< HEAD
         margin-right: 1rem;
         width: 100px;
-=======
         width: 70px;
         font-size: 12px;
         margin-right: 7px;
 
->>>>>>> 43e5aedd0252bbe52edda86b9b90bc9a6a7e219a
     }
 
 
@@ -295,7 +291,6 @@
         display: flex;
         justify-content: space-around;
     }
-<<<<<<< HEAD
            
   /* .........BrandsPage..............        */
   .manufacturers_logo {
@@ -321,7 +316,6 @@
     width: 100%;
     text-align: center;
 }
-=======
     .copy-right{
         margin: 0;
         color: var(--footer-p-color);
@@ -331,4 +325,37 @@
         height: 300px;
       }    
          
->>>>>>> 43e5aedd0252bbe52edda86b9b90bc9a6a7e219a
+/* services page */
+#services .main-tilte{
+    border: none;
+}
+#services p,ul,li{
+color: var(--p-color);
+font-size: var(--font-size-sm);
+line-height: 20px;
+}
+#services .main-tilte{
+    margin-top: 0;
+}
+.p-services{
+    font-size: var(--font-size-sm);
+}
+.serices-title{
+    color: var(--red--bold);
+}
+.li-title{
+    color: var(--red--bold);
+}
+#services ul li{
+    padding-top: 10px;
+}
+.btn-services{
+    float: right;
+    background-color: var(--gray-dark);
+    color: var(--white);
+    border: none;
+    padding: 1px 25px;
+}
+.btn-services:hover{
+ background-color: var(--red--bold);
+}

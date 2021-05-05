@@ -7,8 +7,8 @@
             <ul>
                 <li><a href="#"> Build Your PC</a></li>
                 <li><a href="#"> Specials</a></li>
-                <li> <a href="#">Brands</a></li>
-                <li><a href="#"> Services</a></li>
+                <li> <a href="/brand">Brands</a></li>
+                <li><a href="/services"> Services</a></li>
                 <li><a href="#">Advanced Search</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Sign Up</a></li>
