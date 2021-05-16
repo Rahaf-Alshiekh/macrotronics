@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +11,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return view('index');
 });
+=======
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/', 'ProductController@index');
+>>>>>>> b7fada83e3dcae0623bfc9ea878b7030dbcd44bb
 
 Route::get('/services', function () {
     return view('services');
@@ -29,3 +34,25 @@ Route::get('/login', function () {
 
 
 Route::get('brand',"\App\Http\Controllers\BrandController@index");
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'shop', 'as' => 'product.'], function() {
+    Route::get('index', 'ProductController@index')->name('index');
+    Route::get('c/{taxonomyName}/{taxon}', 'ProductController@index')->name('category');
+    Route::get('p/{product}', 'ProductController@show')->name('show');
+});
+
+Route::group(['prefix' => 'cart', 'as' => 'cart.'], function() {
+    Route::get('show', 'CartController@show')->name('show');
+    Route::post('add/{product}', 'CartController@add')->name('add');
+    Route::post('update/{cart_item}', 'CartController@update')->name('update');
+    Route::post('remove/{cart_item}', 'CartController@remove')->name('remove');
+});
+
+Route::group(['prefix' => 'checkout', 'as' => 'checkout.'], function() {
+    Route::get('show', 'CheckoutController@show')->name('show');
+    Route::post('submit', 'CheckoutController@submit')->name('submit');
+});
+
