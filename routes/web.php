@@ -16,6 +16,11 @@
 // });
 Route::get('/', 'ProductController@index');
 
+Route::get('/services', function () {
+    return view('services');
+});
+
+Route::get('brand',"\App\Http\Controllers\BrandController@index");
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
