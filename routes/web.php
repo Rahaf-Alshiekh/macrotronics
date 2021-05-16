@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,11 +11,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/services', function () {
-    return view('services');
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/', 'ProductController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'shop', 'as' => 'product.'], function() {
+    Route::get('index', 'ProductController@index')->name('index');
+    Route::get('c/{taxonomyName}/{taxon}', 'ProductController@index')->name('category');
+    Route::get('p/{product}', 'ProductController@show')->name('show');
 });
 
-Route::get('brand',"\App\Http\Controllers\BrandController@index");
+Route::group(['prefix' => 'cart', 'as' => 'cart.'], function() {
+    Route::get('show', 'CartController@show')->name('show');
+    Route::post('add/{product}', 'CartController@add')->name('add');
+    Route::post('update/{cart_item}', 'CartController@update')->name('update');
+    Route::post('remove/{cart_item}', 'CartController@remove')->name('remove');
+});
+
+Route::group(['prefix' => 'checkout', 'as' => 'checkout.'], function() {
+    Route::get('show', 'CheckoutController@show')->name('show');
+    Route::post('submit', 'CheckoutController@submit')->name('submit');
+});
+

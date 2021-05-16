@@ -1,61 +1,112 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Vanilo Demo Application
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+![v2.1.0](https://img.shields.io/badge/version-2.1.0-green.svg?style=flat-square)
 
-## About Laravel
+This is a minimalistic Laravel 8 application that demonstrates how to build a simple storefront
+using the Vanilo framework. It also contains the Vanilo admin panel.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+> The app uses the default Bootstrap theme that comes with Laravel.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Installation
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**1. Get the app**:
 
-## Learning Laravel
+Either download and decompress [the zipball](https://github.com/vanilophp/demo/archive/2.x.zip)
+or use git:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```bash
+git clone https://github.com/vanilophp/demo.git vanilo-demo
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**2. Install Dependencies**:
 
-## Laravel Sponsors
+```bash
+cd vanilo-demo/
+composer install
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+**3. Configure the environment**:
 
-### Premium Partners
+> The `.env` file is in the app's [root directory](https://laravel.com/docs/8.x/configuration#environment-configuration).
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+- Create a database for your application.
+- Initialize .env (quickly: `cp .env.example .env && php artisan key:generate`.
+- add the DB credentials to the `.env` file.
 
-## Contributing
+**4. Install Database**:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Run this command:
 
-## Code of Conduct
+```bash
+php artisan migrate --seed
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+**5. Link Storage**:
 
-## Security Vulnerabilities
+Run this command:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+php artisan storage:link
+```
+**6. Create the first admin user**:
 
-## License
+Run this command:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+php artisan make:superuser
+```
+Enter your email, name, password, **accept _admin_ as role**.
+
+**7. Open the application**:
+
+Run the site with `php artisan serve` and access the site:
+
+http://127.0.0.1:8000
+
+Products are not seeded so open the admin panel first to add some products.
+
+#### Product List
+
+![Product list](docs/ss05_01.png)
+
+#### Product Page
+
+![Product page](docs/ss05_02.png)
+
+#### Cart
+
+![Cart](docs/ss05_03.png)
+
+#### Checkout
+
+![Checkout](docs/ss05_04.png)
+
+#### Order Thank You
+
+![Order Thank You](docs/ss05_05.png)
+
+#### Order Admin
+
+![Order Admin](docs/ss05_06.png)
+
+#### Products Admin
+
+![Products Admin](docs/ss05_07.png)
+
+#### Manage Product
+
+![Manage Product](docs/ss05_08.png)
+
+#### Manage Categories
+
+![Manage Categories](docs/ss05_09.png)
+
+#### Manage Properties
+
+![Manage Properties](docs/ss05_10.png)
+
+#### Assign Product Properties
+
+![Assign Product Properties](docs/ss05_11.png)
+
+For further details refer to the [Vanilo Documentation](https://vanilo.io/docs/).
