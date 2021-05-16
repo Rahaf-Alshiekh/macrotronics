@@ -26,7 +26,7 @@
                 <span class="serices-title">After Sale Support</span>
                 <ul>
                     <li>
-                        <span class="li-title">Free Of Charge</span> - Macrotronics will maintain, repair and even replace
+                        <span class="red">Free Of Charge</span> - Macrotronics will maintain, repair and even replace
                         free of charge any equipment or
                         device purchased from its shops, provided it is still covered by the Warranty agreement. The free of
                         charge service also includes helpful guidelines and instructions on modes of usage. All Macrotronics
@@ -34,7 +34,7 @@
                         normal working hours and in Macrotronics premises only.
                     </li>
                     <li>
-                        <span class="li-title">Charged Services</span> – For a certain fee, Macrotronics would take care of
+                        <span class="red">Charged Services</span> – For a certain fee, Macrotronics would take care of
                         whatever onsite installations
                         you require upon purchase, and provides you with the maintenance and repairs you need onsite or in
                         our workshop, whichever way you prefer.

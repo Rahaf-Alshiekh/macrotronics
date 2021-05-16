@@ -11,7 +11,7 @@
                 <li><a href="/services"> Services</a></li>
                 <li><a href="#">Advanced Search</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Sign Up</a></li>
+                <li><a href="/sign_up">Sign Up</a></li>
                 <li><a href="#">Sign In</a></li>
                  
             </ul>

@@ -31,6 +31,16 @@
     body{
         font-family: Arial, Helvetica, sans-serif;
     }
+    p{
+        font-size: var(--font-size-sm);
+        font-family: Arial, Helvetica, sans-serif; 
+        color: var(--p-color);   
+    }
+    label{
+        font-size: var(--font-size-sm);
+        color: var(--p-color);   
+
+    }
 
     .container-fluid {
         background-color: var(--gray-light);
@@ -187,6 +197,8 @@
         margin-top: 40px;
         margin-bottom: 15px;
         border-bottom: 1px dashed var(--border);
+        font-weight: bold;
+        font-size: var(--font-size-sm);
 
     }
     
@@ -328,22 +340,22 @@
 /* services page */
 #services .main-tilte{
     border: none;
+    margin-top: 0;
+
 }
 #services p,ul,li{
 color: var(--p-color);
 font-size: var(--font-size-sm);
 line-height: 20px;
 }
-#services .main-tilte{
-    margin-top: 0;
-}
+
 .p-services{
     font-size: var(--font-size-sm);
 }
 .serices-title{
     color: var(--red--bold);
 }
-.li-title{
+.red{
     color: var(--red--bold);
 }
 #services ul li{
@@ -358,4 +370,47 @@ line-height: 20px;
 }
 .btn-services:hover{
  background-color: var(--red--bold);
+}
+
+/* sign up page */
+#sign-up,#login .main-tilte{
+border: none;
+margin-top: 0;
+
+}
+.sign-up-form h1,.login-form h1{
+    font-size: var(--font-size-md);
+    color: var(--tile-gray);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-section{
+    border: 1px dashed var(--border);
+    padding: 10px 15px;
+    background-color:var(--gray-light) ;
+}
+.form-control{
+    padding: 0.175rem .75rem;
+
+}
+
+.forgot-pass{
+    display: flex;
+    justify-content: space-between;
+}
+.forgot-pass button{
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 1px 25px;
+}
+.forgot-pass button:hover{
+    background-color:var(--gray-dark);
+
+}
+.forgot-pass a{
+    color: var(--red);
+    text-decoration: none;
+
 }
